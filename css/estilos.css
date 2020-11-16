@@ -1,0 +1,482 @@
+{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+        
+}
+
+:root {
+    --green: #229954;
+    --HEX: #196F3D;
+    --YELLOWGREEN: #9ACD32;
+    --gray-light: #E5E7E9;
+    --white: #f4fffd; 
+
+}
+
+body { 
+font-size: 20px;
+    font-family: "Open Sans", sans-serif;
+    overflow-x: hidden;
+    
+}
+
+p {
+    font-size: 22px;
+}
+
+.contenido-header {
+    width: 100%;
+    height: 90vh;
+    background-image: url(../img/fondo.jpg);
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    background-attachment: fixed;
+    display: flex;
+}
+
+
+
+.contenido-header .hojas {
+    width: 0%;
+    height: 90%;
+    max-width: 100%;
+    background-image: url(../img/hojas.png);
+    Object-fit: cover;
+    mix-blend-mode: multiply; 
+}
+
+.contenido-header .nombre {
+	width: calc(100vw - 20px);
+	height: 100vh;
+	font-size: 52px;
+	font-weight: 400;
+	font-family: Montserrat;
+	font-style: bold;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--HEX);
+    
+	
+}
+
+.menu {
+   background-color: green;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    z-index: 999;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: "IBM Plex Sans", serif;
+    font-style: italic;
+    margin-bottom: 20px;   
+    
+}
+
+.menu a {
+    display: inline-block;
+    padding: 2px 2px;
+    font-size: 22px;
+    background-color: green;
+    margin: 0 10px; 
+    transition: .5s ease all;
+    color: var(--HEX);
+    text-decoration: none;
+    color: beige;     
+} 
+
+.menu a:hover {
+    transform: translateY(18px);
+    background-color: var(--HEX);    
+}
+
+.nosotros {
+    margin-bottom: 60px;
+    
+}
+
+.subtitulo {
+    font-size: 20px;
+    color: var(--YELLOWGREEN);
+    font-family: "IBM Plex Sans", serif;
+    font-weight: 700;
+    z-index: 2;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.subtitulo span {
+    background-color: var(--gray-light);
+    padding: 0 15px;
+    z-index: 99;
+    position: relative;    
+}
+
+.subtitulo::after {
+    content: "";
+    display: inline-block;
+    height: 2px;
+    width: 100%;
+    background: var(--YELLOWGREEN);
+    position: relative;
+    top: -29px;
+    z-index: 1;
+}
+
+.nosotros .titulo {
+    width: 70%;
+    font-size: 22px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 50px;
+    object-fit: cover;
+}
+
+.productos {
+    background: var(--gray-light);
+    padding: 20px;
+    margin-bottom: 60px;
+}
+
+.productos .titulo {
+    width: 70%;
+    font-size: 22px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+.productos. producto {
+    position: relative;
+    width: 100%;
+    
+}
+
+.productos .overlay {
+   width: 0%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0%;
+    background: var(--YELLOWGREEN);
+    overflow: hidden;
+    transition: .5s ease;    
+}
+
+.productos .producto:hover .overlay {
+    width: 100%;
+    opacity: .8;
+    
+}
+
+.productos .producto .overlay-texto {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    white-space: nowrap;
+    color: var(--white);
+    font-size: 18px;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    
+} 
+
+.productos .boproductos a{
+    background-color: var(--YELLOWGREEN);
+    color: #fff;
+    padding: 7px 20px;
+    text-transform: uppercase;
+    font-size: 16px;
+    border: 2px solid transparent;
+    transition: .3s ease;
+    color: white;
+  
+    
+}
+
+.productos .boproductos a:hover {
+    background-color: transparent;
+    border: 2px solid var(--YELLOWGREEN);
+    color: var(--YELLOWGREEN);
+   
+
+}
+
+.fondoq {
+    width: 100%;
+    height: 250px;
+    background-image: url(../img/hoja.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 60px;
+    
+}
+
+.fondoq p {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 34px;
+    font-family: "IBM Plex Sans";
+    padding: 10px;
+}
+
+.calidad {
+    margin-bottom: 60px;
+    
+}
+
+.galeria {
+    margin-bottom: 60px;
+           
+}
+
+.galeria img {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    object-fit: cover;
+    
+}
+
+.contacto {
+    margin-bottom: 60px;
+    
+}
+
+input {
+    margin-bottom: 10px;
+    justify-content: center;
+    text-align: center;
+   
+    
+}
+
+.panel {
+    background-color: var(--YELLOWGREEN);
+    padding: 2px; 
+}
+
+
+.panel .enviar a {
+    background-color: green;
+    color: #fff;
+    padding: 7px 20px;
+    text-transform: uppercase;
+    font-size: 16px;
+    border: 2px solid transparent;
+    transition: .3s ease; 
+    color: white;
+   
+}
+
+.panel .enviar a :hover{
+    background-color: transparent;
+    border: 2px solid var(--YELLOWGREEN);
+    color: white;
+}
+.form-control {
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.box {
+    
+    margin: 0 auto;
+    width: 400px;
+    
+}
+.logo {
+    margin-bottom: 60px;
+           
+}
+
+.logo img {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    object-fit: cover;
+}
+
+.personaje {
+    margin-bottom: 60px;
+           
+}
+
+.personaje img {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    object-fit: cover;
+}
+
+footer {
+            background: rgb(0,91,40);
+            padding: 2px;
+        }
+        a:link {
+            color: #fff;
+            text-decoration: none;
+        }
+        a:visited {
+            color: #fff;
+            text-decoration: none;            
+        }
+        a:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+        a:active {
+            color: #fff;
+            text-decoration: none;
+        }
+.containerfooter {
+    padding: 10px;
+    margin-bottom: auto;
+}
+
+#botonArriba {
+    position: fixed;
+    bottom: 20px;
+    right: 100px;
+    width: 40px;
+    transform: all 1s;
+    
+}
+
+#botonHome {
+    position: fixed;
+    bottom: 20px;
+    right: 100px;
+    width: 40px;
+    transform: all 1s;
+    
+}
+
+
+
+.galeriaproductos {
+    background: var(--gray-light);
+    padding: 20px;
+    margin-bottom: 60px;
+    
+}
+
+.galeriaproductos .titulo {
+    width: 70%;
+    font-size: 44px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+.galeriaproductos. producto {
+    position: relative;
+    width: 100%;
+    
+}
+
+.galeriaproductos .overlay {
+   width: 0%;
+    height: 99%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0%;
+    background: var(--YELLOWGREEN);
+    overflow: hidden;
+    transition: .5s ease;    
+}
+
+.galeriaproductos .producto:hover .overlay {
+    width: 100%;
+    opacity: .8;
+    
+}
+
+.galeriaproductos .producto .overlay-texto {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    white-space: nowrap;
+    color: var(--white);
+    font-size: 18px;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    
+} 
+
+
+
+.galeriaproductos .volverinicio a{
+    background-color: var(--YELLOWGREEN);
+    color: #fff;
+    padding: 7px 20px;
+    text-transform: uppercase;
+    font-size: 16px;
+    border: 2px solid transparent;
+    transition: .3s ease;
+    color: white;
+  
+    
+}
+
+.galeriaproductos .volverinicio a:hover {
+    background-color: transparent;
+    border: 2px solid var(--YELLOWGREEN);
+    color: var(--YELLOWGREEN);
+   
+
+}
+
+
+.barra {
+   background-color: green;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    z-index: 999;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: "IBM Plex Sans", serif;
+    font-style: italic;
+    margin-bottom: 60px;   
+    
+}
+
+.barra a {
+    display: inline-block;
+    padding: 18px 2px;
+    font-size: 26px;
+    background-color: green;
+    margin: 0 10px; 
+    transition: .5s ease all;
+    color: var(--HEX);
+    text-decoration: none;
+    color: beige;     
+} 
+
+
+
+
+
+
+
+
+
+    
